@@ -1,10 +1,89 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>EatConnect - Test</title>
+<%- include('../partials/head', { title: 'EatConnect - Berbagi Makanan Berbagi Kebahagiaan' }) %>
+<link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <h1>Hello World! Server berhasil jalan!</h1>
-    <p>EatConnect Kelompok 9</p>
-</body>
-</html>
+    <!-- Header Section with Hero -->
+    <header class="header">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="logo">EatConnect</div>
+            <ul class="nav-links">
+                <li><a href="/beranda">Beranda</a></li>
+                <li><a href="/cara-kerja">Cara Kerja</a></li>
+                <li><a href="/edukasi">Edukasi</a></li>
+                <li><a href="/tentang">Tentang</a></li>
+            </ul>
+            <a href="/bergabung" class="bergabung-btn">Bergabung</a>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>
+                Berbagi Makanan<br>
+                Berbagi Kebahagiaan
+            </h1>
+            <p>
+                Menghubungkan rumah makan dengan panti asuhan dan pondok pesantren 
+                untuk mengurangi food waste dan membantu sesama
+            </p>
+            <div class="hero-buttons">
+                <a href="/mulai-berdonasi" class="btn-primary">Mulai Berdonasi</a>
+                <a href="/cara-kerja" class="btn-secondary">Pelajari Selengkapnya</a>
+            </div>
+        </section>
+    </header>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="stats-container">
+            <div class="stat-item">
+                <span class="stat-number">1,750</span>
+                <span class="stat-label">PORSI MAKANAN</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">59</span>
+                <span class="stat-label">PARTNERSHIP</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">27</span>
+                <span class="stat-label">PENERIMA BANTUAN</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cara Kerja Section -->
+    <section class="cara-kerja">
+        <div class="cara-kerja-container">
+            <h2 class="section-title">Cara Kerja</h2>
+            <div class="steps-container">
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Restaurant Berdonasi</h3>
+                        <p>Restaurant mendaftarkan makanan berlebih yang masih layak konsumsi melalui platform kami</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Komunitas Mengambil</h3>
+                        <p>Relawan komunitas mengambil makanan dari restaurant sesuai jadwal yang telah ditentukan</p>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Distribusi Makanan</h3>
+                        <p>Makanan didistribusikan ke panti asuhan, pondok pesantren, dan masyarakat yang membutuhkan</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<%- include('../partials/footer') %>
