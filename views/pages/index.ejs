@@ -2,41 +2,7 @@
 <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <!-- Header Section with Hero -->
-    <header class="header">
-        <!-- Navigation -->
-        <nav class="navbar">
-            <div class="logo">EatConnect</div>
-            <ul class="nav-links">
-                <li><a href="/beranda">Beranda</a></li>
-                <li><a href="/cara-kerja">Cara Kerja</a></li>
-                <li><a href="/edukasi">Edukasi</a></li>
-                <li><a href="/tentang">Tentang</a></li>
-            </ul>
-            <a href="/bergabung" class="bergabung-btn">Bergabung</a>
-            <div class="mobile-menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
-
-        <!-- Hero Section -->
-        <section class="hero">
-            <h1>
-                Berbagi Makanan<br>
-                Berbagi Kebahagiaan
-            </h1>
-            <p>
-                Menghubungkan rumah makan dengan panti asuhan dan pondok pesantren 
-                untuk mengurangi food waste dan membantu sesama
-            </p>
-            <div class="hero-buttons">
-                <a href="/mulai-berdonasi" class="btn-primary">Mulai Berdonasi</a>
-                <a href="/cara-kerja" class="btn-secondary">Pelajari Selengkapnya</a>
-            </div>
-        </section>
-    </header>
+    <%- include('../partials/header') %>
 
     <!-- Stats Section -->
     <section class="stats">
@@ -86,7 +52,7 @@
         </div>
     </section>
 
-    <!--Bergabung sesuai peran anda-->
+    <!-- Bergabung sesuai peran anda -->
     <section class="bergabung-peran">
         <div class="container">
             <h2 class="section-title">Bergabung Sesuai Peran Anda</h2>
@@ -119,37 +85,40 @@
         </div>   
     </section>
 
-    <!--Fitur Edukasi dan Teknologi-->
-<section class="fitur-edukasi">
-    <div class="container">
-        <h2 class="section-title">Fitur Edukasi & Teknologi</h2>
-        <div class="fitur-cards">
-            <!-- Item 1: Gambar di kanan, card di kiri -->
-            <div class="fitur-item image-right">
-                <div class="fitur-image">
-                    <img src="/Images/Gemini_Generated_Image_l9wwiil9wwiil9ww 2.png" alt="Pelacakan Gizi AI">
-                </div>
-                <div class="fitur-card">
-                    <div class="fitur-content">
-                        <h3>Pelacakan Gizi AI & Smart Diary Makanan</h3>
-                        <p>Website menggunakan AI untuk menganalisis kandungan nutrisi makanan dan memberikan fitur pencatatan, analisis nutrisi otomatis, tracking kalori, dan saran perbaikan pola makan yang dipersonalisasi</p>
+    <!-- Fitur Edukasi dan Teknologi -->
+    <section class="fitur-edukasi">
+        <div class="container">
+            <h2 class="section-title">Fitur Edukasi & Teknologi</h2>
+            <div class="fitur-cards">
+                <!-- Item 1: Gambar di kanan, card di kiri -->
+                <div class="fitur-item image-right">
+                    <div class="fitur-image">
+                        <img src="/Images/Gemini_Generated_Image_l9wwiil9wwiil9ww 2.png" alt="Pelacakan Gizi AI">
+                    </div>
+                    <div class="fitur-card">
+                        <div class="fitur-content">
+                            <h3>Pelacakan Gizi AI & Smart Diary Makanan</h3>
+                            <p>Website menggunakan AI untuk menganalisis kandungan nutrisi makanan dan memberikan fitur pencatatan, analisis nutrisi otomatis, tracking kalori, dan saran perbaikan pola makan yang dipersonalisasi</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            
-            <!-- Item 2: Gambar di kiri, card di kanan -->
-            <div class="fitur-item image-left">
-                <div class="fitur-image">
-                    <img src="/Images/Gemini_Generated_Image_kel7yfkel7yfkel7 1.png" alt="Platform Edukasi">
-                </div>
-                <div class="fitur-card">
-                    <div class="fitur-content">
-                        <h3>Platform Edukasi Terintegrasi & Forum Komunitas</h3>
-                        <p>Website menyediakan konten edukasi nutrisi, resep sehat, dan video pembelajaran tentang hidup sehat, serta fitur komunitas untuk berbagi tips, resep dan pengalaman antar pengguna</p>
+                
+                <!-- Item 2: Gambar di kiri, card di kanan -->
+                <div class="fitur-item image-left">
+                    <div class="fitur-image">
+                        <img src="/Images/Gemini_Generated_Image_kel7yfkel7yfkel7 1.png" alt="Platform Edukasi">
+                    </div>
+                    <div class="fitur-card">
+                        <div class="fitur-content">
+                            <h3>Platform Edukasi Terintegrasi & Forum Komunitas</h3>
+                            <p>Website menyediakan konten edukasi nutrisi, resep sehat, dan video pembelajaran tentang hidup sehat, serta fitur komunitas untuk berbagi tips, resep dan pengalaman antar pengguna</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-<%- include('../partials/footer') %>
+    <%- include('../partials/footer') %>
+</body>
+</html>
