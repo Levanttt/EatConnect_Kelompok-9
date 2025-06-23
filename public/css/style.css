@@ -12,7 +12,7 @@ body {
 /* Header Styles */
 .header {
   background: linear-gradient(
-    180deg,
+    135deg,
     #175964 0%,
     #2c5a8c 30%,
     #1e3a5f 70%,
@@ -619,98 +619,113 @@ button:focus {
   .peran-card {
     padding: 2rem 1rem;
   }
+}
 
-  /*Fitur Edukasi dan Teknologi
 /* Fitur Edukasi & Teknologi */
-  .fitur-edukasi {
-    background: #1e3a5f;
-    padding: 5rem 2rem;
+.fitur-edukasi {
+  background: #1e3a5f;
+  padding: 5rem 2rem;
+}
+
+.fitur-edukasi .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.fitur-edukasi .section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.fitur-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.fitur-item {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.fitur-item.image-right {
+  flex-direction: row-reverse;
+}
+
+.fitur-item.image-left {
+  flex-direction: row;
+}
+
+.fitur-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 2rem;
+  flex: 1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fitur-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.fitur-image {
+  flex: 0 0 200px; 
+  align-self: stretch; 
+}
+
+.fitur-image img {
+  width: 100%;
+  height: 100%;
+  max-width: 200px; 
+  border-radius: 10px;
+  object-fit: cover; 
+}
+
+.fitur-content {
+  color: white;
+}
+
+.fitur-content h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+}
+
+.fitur-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .fitur-cards {
+    gap: 1.5rem;
   }
 
-  .fitur-edukasi .container {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  .fitur-edukasi .section-title {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: white;
-    margin-bottom: 3rem;
+  .fitur-item,
+  .fitur-item.image-right,
+  .fitur-item.image-left {
+    flex-direction: column;
     text-align: center;
   }
 
-  .fitur-cards {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  }
-
-  .fitur-card {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    border-radius: 15px;
-    padding: 2rem;
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-
-  .fitur-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
-  }
-
   .fitur-image {
-    flex: 0 0 120px;
-  }
-
-  .fitur-image img {
-    width: 100%;
-    max-width: 120px;
-    border-radius: 10px;
-  }
-
-  .fitur-content {
-    flex: 1;
-    color: white;
+    flex: none;
+    order: -1; /* Gambar selalu di atas di mobile */
   }
 
   .fitur-content h3 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 0.75rem;
+    font-size: 1.3rem;
   }
 
   .fitur-content p {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: rgba(255, 255, 255, 0.9);
-  }
-
-  /* Responsive */
-  @media (max-width: 768px) {
-    .fitur-cards {
-      gap: 1.5rem;
-    }
-
-    .fitur-card {
-      flex-direction: column;
-      text-align: center;
-    }
-
-    .fitur-image {
-      flex: none;
-    }
-
-    .fitur-content h3 {
-      font-size: 1.3rem;
-    }
-
-    .fitur-content p {
-      font-size: 0.95rem;
-    }
+    font-size: 0.95rem;
   }
 }
